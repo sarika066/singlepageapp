@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="title">2048</div>
+    <div class="scores">
+      <div class="score-box">
+        <div class="score-label">Score</div>
+        <div class="score-value" id="score">0</div>
+      </div>
+      <div class="score-box">
+        <div class="score-label">Best</div>
+        <div class="score-value" id="best">0</div>
+      </div>
+    </div>
+  </header>
+  <div class="controls">
+    <span class="hint">Arrow keys / WASD / Swipe</span>
+    <button class="btn-new" onclick="initGame()">New Game</button>
+  </div>
+  <div class="grid-wrap">
+    <div class="grid" id="grid"></div>
+    <div class="overlay" id="overlay">
+      <div class="overlay-title" id="overlay-title">Game Over!</div>
+      <div class="overlay-sub" id="overlay-sub">No moves left</div>
+      <button class="btn-play-again" onclick="initGame()">Play Again</button>
+    </div>
+  </div>
+  <footer>Built with ❤ · Deploy on GitHub Pages</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
